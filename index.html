@@ -2,61 +2,65 @@
 
 <html lang="es">
 
-    <head>
-        <!--Codificacion-->
-        <meta charset="utf-8">
-        <!-- Para que se ajuste la web al tamaño de la ventana -->
-        <meta name="viewpoint" content="width=device-widh">
-        <!-- Titulo de la web -->
-        <title>Mi Weblog Personal</title>
+<head>
+    <!--Codificación-->
+    <meta charset="utf-8">
+    <!-- Para que se ajuste la web al tamaño de la ventana -->
+    <meta name="viewpoint" content="width=device-widh"> <!-- Error de ortografía, debería ser "width=device-width" -->
+    <!-- Título de la web -->
+    <title>Mi Weblog Personal</title>
 
-        <!-- Agrega la hoja de estilos a la página -->
-        <link rel="stylesheet" href="estilos.css">
+    <!-- Agregar la hoja de estilos a la página -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Web Personal</h1>
+        <p>Todo sobre mí</p>
+    </header>
 
-        <header>
-            <h1>Web Personal</h1>
-            <p>Todo sobre mi</p>
-        </header>
+    <!-- Contenido principal -->
+    <h2>Progreso como programador</h2>
+    <p>
+        Desde que comencé a programar, he crecido mucho. Pasé de ser un principiante
+        a un programador competente, capaz de abordar desafíos complejos con soluciones
+        elegantes. Aprendí nuevas tecnologías y mejoré mi habilidad para trabajar en equipo.
+        Mi mentalidad de crecimiento me impulsa a seguir mejorando constantemente. Estoy
+        emocionado por lo que el futuro me depara en este campo.
+    </p>
 
-        <h2>Progreso como programador</h2>
-        <p>
-            Desde que comencé a programar, he crecido mucho. Pasé de ser un principiante 
-            a un programador competente, capaz de abordar desafíos complejos con soluciones 
-            elegantes. Aprendí nuevas tecnologías y mejoré mi habilidad para trabajar en equipo. 
-            Mi mentalidad de crecimiento me impulsa a seguir mejorando constantemente. Estoy 
-            emocionado por lo que el futuro me depara en este campo.</p>
-        <!-- Creamos formulario -->
-        <h2>Formulario de Contacto</h2>
-        <form action="/" method="post">
-            <!-- Apartado de Nombre -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+    <!-- Formulario de contacto -->
+    <h2>Formulario de Contacto</h2>
+    <form action="/" method="post">
+        <!-- Apartado de Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required><br><br>
 
-            <!-- Apartado de Email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <!-- Apartado de Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required><br><br>
 
-            <!-- Apartado de Mensaje -->
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-            
-            <!-- Botón para enviar contacto -->
-            <button>Enviar contacto</button>
-        
-            <!-- Botón para borrar todo -->
-            <button type="reset">Borrar</button>
+        <!-- Apartado de Mensaje -->
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje..." rows="4" cols="50" required></textarea><br><br>
 
-        </form>
+        <!-- Botón para enviar contacto -->
+        <button>Enviar contacto</button>
 
-        <footer>
-            <p>&copy; 2024 | Contacto: 
-            <a href="mailto:cliente@example.com">Email cliente</a></p>
-        </footer>
+        <!-- Botón para borrar todo -->
+        <button type="reset">Borrar</button>
+    </form>
 
-    </body>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 | Contacto:
+            <a href="mailto:cliente@example.com">Email cliente</a>
+        </p>
+    </footer>
+
+</body>
 
 </html>
